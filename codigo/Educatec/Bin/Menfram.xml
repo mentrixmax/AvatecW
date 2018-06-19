@@ -1,0 +1,1131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Menfram</name>
+    </assembly>
+    <members>
+        <member name="T:Menfram.Common.Constantes.TipoPadraoCampos">
+            <summary>
+            Enumeração de tipos de dados.
+            </summary>
+        </member>
+        <member name="T:Menfram.Common.Constantes.TipoAcesso">
+            <summary>
+            Enumeração de tipos de dados.
+            </summary>
+        </member>
+        <member name="T:Menfram.Business.Abstract.AbstractBusiness`1">
+            <summary>
+            Class responsability of the Logic Business 
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.getFirst">
+            <summary>
+            get the First Record the table of the database order by Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.getLast">
+            <summary>
+            get the Last Record the table of the database order by Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.getNext(System.String,System.String)">
+            <summary>
+            get the Next the table of the database order by Key
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.getPrior(System.String,System.String)">
+            <summary>
+            get the Previews the table of the database order by Key
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.findByKey(System.String)">
+            <summary>
+            get the Entity by Key 
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.findById(System.Nullable{System.Int32})">
+            <summary>
+            get the Entity by Sequence
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.findAll">
+            <summary>
+            returns all records of the table.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.findByParameters(`0)">
+            <summary>
+            returns the records of the table Meets that the specified filter
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.update(`0)">
+            <summary>
+            the update record in the database
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.create(`0)">
+            <summary>
+            create record in the database
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.delete(System.Nullable{System.Int32})">
+            <summary>
+            delete record in the database
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Interface.IBusiness`1.getId(`0)">
+            <summary>
+            get the sequence by key
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Menfram.Business.Abstract.AbstractBusiness`1.transaction">
+            <summary>
+            Thre Transaction
+            </summary>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.getDAO">
+            <summary>
+            this method must return the Correct DAO
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.validaCreate(`0)">
+            <summary>
+             The Method valid the Create
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.validaUpdate(`0)">
+            <summary>
+            The Method valid the Update
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.validaRemove(System.Nullable{System.Int32})">
+            <summary>
+            The method valid the delete
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.getFirst">
+            <summary>
+            just call the getFirst in the dao
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Menfram.Business.Abstract.AbstractBusiness`1.getLast" -->
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.getNext(System.String,System.String)">
+            <summary>
+            just call the getNext in the dao
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.getPrior(System.String,System.String)">
+            <summary>
+             just call the findByKey in the dao
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.findByKey(System.String)">
+            <summary>
+             just call the findByKey in the dao
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.findAll">
+            <summary>
+             just call the findAll in the dao
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.findByParameters(`0)">
+            <summary>
+              just call the findByParameters in the dao
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.update(`0)">
+            <summary>
+             just call the update in the dao
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.create(`0)">
+            <summary>
+             just call the create in the dao
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.delete(System.Nullable{System.Int32})">
+            <summary>
+             just call the delete in the dao
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.findById(System.Nullable{System.Int32})">
+            <summary>
+             just call the findById in the dao;
+            </summary>
+            <param name="Sequencial"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Business.Abstract.AbstractBusiness`1.getId(`0)">
+            <summary>
+            just call the getId in the dao;
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Menfram.DAL.Abstract.AbstractDAO`1">
+            <summary>
+            Abstract class DAO, the object of this class is Center in one place all the basic functionality of a CRUD
+            In case: Create, Update, Delete, Next, First, Last, Previous, findByChave, findAll, findByParameteres
+            This class should only have access to basic rules of business should be implemented in the upper layer.
+            </summary>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.getFirst">
+            <summary>
+            get the First Record the table of the database order by Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.getLast">
+            <summary>
+            get the Last Record the table of the database order by Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.getNext(System.String,System.String)">
+            <summary>
+            get the Next the table of the database order by Key
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.getPrior(System.String,System.String)">
+            <summary>
+            get the Prior the table of the database order by Key
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.findByKey(System.String)">
+            <summary>
+            get the Entity by Key 
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.findById(System.Nullable{System.Int32})">
+            <summary>
+            get the Entity by Sequence
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.findAll">
+            <summary>
+            returns all records of the table.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.findByParameters(`0)">
+            <summary>
+            returns the records of the table Meets that the specified filter
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.update(`0)">
+            <summary>
+            the update record in the database
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.create(`0)">
+            <summary>
+            create record in the database
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.delete(System.Nullable{System.Int32})">
+            <summary>
+            delete record in the database
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Interface.IDAL`1.getId(`0)">
+            <summary>
+            get the sequence by key
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Menfram.DAL.Abstract.AbstractDAO`1.listaValues">
+            <summary>
+            list of the values: 
+            </summary>
+        </member>
+        <member name="F:Menfram.DAL.Abstract.AbstractDAO`1.listaParamen">
+            <summary>
+            list of the param to create: 
+            </summary>
+        </member>
+        <member name="F:Menfram.DAL.Abstract.AbstractDAO`1.listaParamenUpdate">
+            <summary>
+            list of the param to update: 
+            </summary>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getSequenceColumnName">
+            <summary>
+            this method must returns the name of the field sequence of the table of DB
+            </summary>
+            <returns>o campo sequencial do BD</returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getSequenceName">
+            <summary>
+            this method must returns the name of the field sequence of the table of DB
+            </summary>
+            <returns>o campo sequencial do BD</returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getTableName">
+            <summary>
+            this method must returns the table Name in the DB 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getKey">
+            <summary>
+            this method must returns the name of the field which programmer Will Want use like key 
+            must be one column of the table in the database, must be one unique key. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getKeyColumnName">
+            <summary>
+            this method must returns the name of the field which programmer Will Want use like key 
+            must be one column of the table in the database, must be one unique key. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.fillEntity(`0)">
+            <summary>
+            this method copy the values of the Entity to DataBase.
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.fillEntity(Menfram.Entity.Interface.IEntity,System.Type)">
+            <summary>
+            this method copy the values of the Entity to DataBase.
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.returnEntity(System.Data.Common.DbDataReader)">
+            <summary>
+            this method copy the Data of the Table in the DataBase to IEntity
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.returnEntityNoMap(System.Data.Common.DbDataReader)">
+            <summary>
+            this method copy the Data of the Table in the DataBase to IEntity
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.returnEntity(System.Data.Common.DbDataReader,Menfram.Entity.Interface.IEntity)">
+            <summary>
+            this method copy the Data of the Table in the DataBase to IEntity
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.returnEntityNoMapps(System.Data.Common.DbDataReader,Menfram.Entity.Interface.IEntity)">
+            <summary>
+            this method copy the Data of the Table in the DataBase to IEntity
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.update(`0)">
+            <summary>
+            the method to update
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.update(`0,System.Data.Common.DbTransaction)">
+            <summary>
+            the method to update
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.create(`0)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.create(Menfram.Entity.Interface.IEntity,System.Type)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.createCascade(System.Collections.Hashtable,System.Nullable{System.Int32},Menfram.Entity.Interface.IEntity)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.createCascadeOneToOne(Menfram.DAL.Reflection.OneToOne,Menfram.Entity.Interface.IEntity,System.String)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.updateCascadeOneToOne(Menfram.DAL.Reflection.OneToOne,Menfram.Entity.Interface.IEntity,System.String)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.updateCascade(System.Collections.Hashtable,Menfram.Entity.Interface.IEntity)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.deleteCascade(System.Collections.Hashtable,System.Nullable{System.Int32},Menfram.Entity.Interface.IEntity)">
+            <summary>
+            the create Method
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.delete(System.Nullable{System.Int32})">
+            <summary>
+            the delete Method
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.delete(Menfram.Entity.Interface.IEntity)">
+            <summary>
+            the delete Method
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.executeQuery(System.String)">
+            <summary>
+            Method used to execute one query in the DataBase
+            </summary>
+            <param name="sql"></param>
+            <returns>DbDataReader</returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.executeEscalar(System.String)">
+            <summary>
+            Returns the unique value of the DataBase, must be used to query which returns only one object
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.returnFistResult(System.Data.Common.DbDataReader)">
+            <summary>
+            Return First Result of the Query - 
+            Used in the implementation of the methods  Firs, Last, Previews e Next.
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.returnFistResultEntity(System.Data.Common.DbDataReader,Menfram.Entity.Interface.IEntity)">
+            <summary>
+            Return First Result of the Query - 
+            Used in the implementation of the methods  Firs, Last, Previews e Next.
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getFirst">
+            <summary>
+            get the First Record the table of the database order by Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getLast">
+            <summary>
+            get the Last Record the table of the database order by Key
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getNext(System.String,System.String)">
+            <summary>
+            get the Next the table of the database order by Key
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getPrior(System.String,System.String)">
+            <summary>
+            get the Prior the table of the database order by Key
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.findByKey(System.String)">
+            <summary>
+            get the Entity by Key 
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getId(`0)">
+            <summary>
+            get the sequence by key
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getId">
+            <summary>
+            get the sequence by key
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.findAll">
+            <summary>
+            Treturns all records of the table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.findByParameters(`0)">
+            <summary>
+            returns the records of the table Meets that the specified filter
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.findByParametersLike(`0)">
+            <summary>
+            returns the records of the table Meets that the specified filter
+            </summary>
+            <param name="entidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getListColumns">
+            <summary>
+            this build the strings to methods create, update, and delete
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getListColumnsUpdate">
+            <summary>
+            this build the strings to methods create, update, and delete
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.getListColumnsWithAnd(System.Collections.Hashtable)">
+            <summary>
+            this build the strings to methods create, update, and delete
+            with And
+            </summary>
+            <param name="lista"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.buildSqlInsert">
+            <summary>
+            Build the QUERY SQL TO insert
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.buildSqlInsert(System.String)">
+            <summary>
+            Build the QUERY SQL TO insert
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.buildSqlUpdate(System.Nullable{System.Int32})">
+            <summary>
+            Build the QUERY SQL TO update
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.buildSqlUpdate(System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Build the QUERY SQL TO update
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerLast">
+            <summary>
+            Build one DbDataReader filled with the data of the  last Record in the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerFirst">
+            <summary>
+            Build one DbDataReader filled with the data of the First Record in the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerFindKey(System.String)">
+            <summary>
+            Build one DbDataReader filled with the data of the Record in the database which match with key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerFindSequence(System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Build one DbDataReader filled with the data of the Record in the database which match with sequence
+            </summary>
+            <param name="sequence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerFindSequence(System.Nullable{System.Int32})">
+            <summary>
+            Build one DbDataReader filled with the data of the Record in the database which match with sequence
+            </summary>
+            <param name="sequence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerNext(System.String,System.String)">
+            <summary>
+            Build one DbDataReader filled with the data of the Next Record in the database
+            by Current Record.
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.readerPrior(System.String,System.String)">
+            <summary>
+            Build one DbDataReader filled with the data of the Next Record in the database
+            by Current Record.
+            </summary>
+            <param name="KeyCurrent"></param>
+            <param name="SequenceCurrent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.executeNonQuery(System.String)">
+            <summary>
+            Method used to execute one query in the DataBase Without results
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.executeNonQueryDelete(System.String)">
+            <summary>
+            Method used to execute one query in the DataBase Without results
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.findByParameters(System.Collections.Hashtable)">
+            <summary>
+            Method used to execute one query in the DataBase With results
+            </summary>
+            <param name="lista"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.findById(System.Nullable{System.Int32})">
+            <summary>
+            get the Entity by Sequence
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.DAL.Abstract.AbstractDAO`1.LoadById(System.Nullable{System.Int32},System.String,System.String,Menfram.Entity.Interface.IEntity)">
+            <summary>
+            get the Entity by Sequence
+            </summary>
+            <param name="chave"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Menfram.DAL.Abstract.AbstractDAO`1.abs">
+            <summary>
+            implementation of the pattener Strategy. 
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.IAbstractSQL.getCommand(System.String)">
+            <summary>
+            Method used to make a query to the database.
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.IAbstractSQL.setParameteres">
+            <summary>
+            Method used to populate parameteres of the query.
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.IAbstractSQL.getInstance">
+            <summary>
+            Method used to get the Instance 
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.IAbstractSQL.closeConnection">
+            <summary>
+            Method used to close the connection with database.
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.IAbstractSQL.Command">
+            <summary>
+            Method used to make a query to the database.
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.IAbstractSQL.Connection">
+            <summary>
+            Method used to make connection with database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.IAbstractSQL.listOfTheParam">
+            <summary>
+            Method used to make a list of the parameters.
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.IAbstractSQL.Transaction">
+            <summary>
+            Method used to get the DbTransaction.
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.MysqlDAO.getCommand(System.String)">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.MysqlDAO.setParameteres">
+            <summary>
+            the method that set the parameteres 
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.MysqlDAO.getInstance">
+            <summary>
+            implementation of the pattner Singleton
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.MysqlDAO.conn">
+            <summary>
+            Atribute Connection;
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.MysqlDAO.PUrlConnection">
+            <summary>
+            Propertie url of the Connetion
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.MysqlDAO.getConection">
+            <summary>
+            method that get the MysqlConnection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.MysqlDAO.openConnection">
+            <summary>
+            the method with open the connection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.MysqlDAO.closeConnection">
+            <summary>
+            the method with close the connection 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.MysqlDAO.Command">
+            <summary>
+            Method that creates a command to execute SQL queries
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.MysqlDAO.Connection">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.MysqlDAO.listOfTheParam">
+            <summary>
+            method used to mount the queries in the database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.MysqlDAO.Transaction">
+            <summary>
+            method with get the transaction with the database
+            </summary>
+        </member>
+        <member name="T:Menfram.Implementation.DAL.ODBCDAO">
+            <summary>
+            Classse ODBCDAO
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.ODBCDAO.getCommand(System.String)">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.ODBCDAO.setParameteres">
+            <summary>
+            the method that set the parameteres 
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.ODBCDAO.getInstance">
+            <summary>
+            implementation of the pattner Singleton
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.ODBCDAO.conn">
+            <summary>
+            Atribute Connection;
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.ODBCDAO.PUrlConnection">
+            <summary>
+            Propertie url of the Connetion
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.ODBCDAO.getConection">
+            <summary>
+            method that get the MysqlConnection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.ODBCDAO.openConnection">
+            <summary>
+            the method with open the connection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.ODBCDAO.closeConnection">
+            <summary>
+            the method with close the connection 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.ODBCDAO.Command">
+            <summary>
+            Method that creates a command to execute SQL queries
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.ODBCDAO.Connection">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.ODBCDAO.listOfTheParam">
+            <summary>
+            method used to mount the queries in the database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.ODBCDAO.Transaction">
+            <summary>
+            method with get the transaction with the database
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.PostgreDAO.getCommand(System.String)">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.PostgreDAO.setParameteres">
+            <summary>
+            the method that set the parameteres 
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.PostgreDAO.getInstance">
+            <summary>
+            implementation of the pattner Singleton
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.PostgreDAO.conn">
+            <summary>
+            Atributo Conexao;
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.PostgreDAO.getConnection">
+            <summary>
+            the Method that get the NpgsqlConnection.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.PostgreDAO.openConnection">
+            <summary>
+            method that get open the NpgsqlConnection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.PostgreDAO.closeConnection">
+            <summary>
+            the method with close the connection 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.PostgreDAO.Command">
+            <summary>
+            Method that creates a command to execute SQL queries
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.PostgreDAO.Connection">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.PostgreDAO.listOfTheParam">
+            <summary>
+            method used to mount the queries in the database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.PostgreDAO.Transaction">
+            <summary>
+            method with get the transaction with the database
+            </summary>
+        </member>
+        <member name="T:Menfram.Implementation.DAL.SQLDAO">
+            <summary>
+            Class responsible for the ability of the framework to connect to a Ms SqlServer database
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.SQLDAO.setParameteres">
+            <summary>
+            the method that set the parameteres 
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.SQLDAO.instance">
+            <summary>
+            implementation default of the Singleton.
+            </summary>
+        </member>
+        <member name="F:Menfram.Implementation.DAL.SQLDAO.conn">
+            <summary>
+            Connection Attribute;
+            </summary>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.SQLDAO.getInstance">
+            <summary>
+            Implementation of the Singleton
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.SQLDAO.getConnection">
+            <summary>
+            method which get the SLQConnection oppened.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.SQLDAO.openConnection">
+            <summary>
+            method which open the Connection whith DB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Implementation.DAL.SQLDAO.closeConnection">
+            <summary>
+            method which close the Connection with DB
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.SQLDAO.Command">
+            <summary>
+            Method that creates a command to execute SQL queries
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.SQLDAO.Connection">
+            <summary>
+            Method that creates a connection with database
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.SQLDAO.listOfTheParam">
+            <summary>
+            method used to mount the queries in the database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.SQLDAO.ConnectionUrl">
+            <summary>
+            Propertie to Connection Url with the database
+            </summary>
+        </member>
+        <member name="P:Menfram.Implementation.DAL.SQLDAO.Transaction">
+            <summary>
+            method with get the transaction with the database
+            </summary>
+        </member>
+        <member name="T:Menfram.Entity.Interface.IEntity">
+            <summary>
+            Interface of the Transfer Object
+            </summary>
+        </member>
+        <member name="P:Menfram.Entity.Interface.IEntity.Sequencial">
+            <summary>
+            Sequence of the DataBase
+            </summary>
+        </member>
+        <member name="P:Menfram.Entity.Interface.IEntity.Key">
+            <summary>
+            The key
+            </summary>
+        </member>
+        <member name="P:Menfram.Entity.Interface.IEntity.DescriptionComboBox">
+            <summary>
+            The Default Description
+            </summary>
+        </member>
+        <member name="T:Menfram.Reflection.Configurations`1">
+            <summary>
+            Class that uses reflection to discover the fields and attributes of a class.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getTableConfiguration(System.Type)">
+            <summary>
+            Method with read the class and return the name of atributes 
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getFildConfiguration(`0)">
+            <summary>
+            Method with read the class and return the hashtable filled witch value and key
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getFildConfiguration(Menfram.Entity.Interface.IEntity)">
+            <summary>
+            Method with read the class and return the hashtable filled witch value and key
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getProperty(`0,System.String)">
+            <summary>
+            Method with get the value of the atribute of the object
+            </summary>
+            <param name="a"></param>
+            <param name="prop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getProperty(Menfram.Entity.Interface.IEntity,System.String)">
+            <summary>
+            Method with get the value of the atribute of the object
+            </summary>
+            <param name="a"></param>
+            <param name="prop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.setProperty(System.Reflection.PropertyInfo,System.String,System.Object,System.Object)">
+            <summary>
+            Method with put the value of the atribute in the object.
+            </summary>
+            <param name="pInfo"></param>
+            <param name="propertyName"></param>
+            <param name="propertyValue"></param>
+            <param name="objectToSetValue"></param>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getEntityFilled(System.Data.Common.DbDataReader,System.String)">
+            <summary>
+            Method with filled the copy te data of the databases to entity
+            </summary>
+            <param name="db"></param>
+            <param name="nameObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Menfram.Reflection.Configurations`1.getEntityFilled(System.Data.Common.DbDataReader,System.String,System.Type)">
+            <summary>
+            Method with filled the copy te data of the databases to entity
+            </summary>
+            <param name="db"></param>
+            <param name="nameObject"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Menfram.DAL.Reflection.Field">
+            <summary>
+            Class reponsablity of the mapped the Atribute
+            </summary>
+        </member>
+        <member name="T:Menfram.DAL.Reflection.Key">
+            <summary>
+            Class reponsablity of the mapped the Atribute
+            </summary>
+        </member>
+        <member name="T:Menfram.DAL.Reflection.NoField">
+            <summary>
+            Class reponsablity of the mapped the Atribute
+            </summary>
+        </member>
+        <member name="T:Menfram.DAL.Reflection.Table">
+            <summary>
+            Class reponsablity of the mapped the Table
+            </summary>
+        </member>
+        <member name="T:Menfram.DAL.Reflection.OneToMany">
+            <summary>
+            Class reponsablity of the mapped the Atribute
+            </summary>
+        </member>
+        <member name="T:Menfram.DAL.Reflection.OneToOne">
+            <summary>
+            Class reponsablity of the mapped the Atribute
+            </summary>
+        </member>
+    </members>
+</doc>
