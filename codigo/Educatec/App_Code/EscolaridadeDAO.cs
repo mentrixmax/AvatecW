@@ -14,8 +14,9 @@ public class EscolaridadeDAO : AbstractDAO<Escolaridade>
 
     }
 
-    private EscolaridadeDAO dao = null;
-    public EscolaridadeDAO getInstance()
+    private static EscolaridadeDAO dao = null;
+
+    public static EscolaridadeDAO getInstance()
     {
         if (dao == null)
         {
@@ -24,6 +25,7 @@ public class EscolaridadeDAO : AbstractDAO<Escolaridade>
         }
         return dao;
 
+    
     }
     public override Type getTipo()
     {

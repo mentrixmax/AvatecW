@@ -15,8 +15,8 @@ public class EstadoDAO : AbstractDAO<Estado>
 		// TODO: Add constructor logic here
 		//
 	}
-    private EstadoDAO dao = null;
-    public EstadoDAO getInstance()
+    private static EstadoDAO dao = null;
+    public static EstadoDAO getInstance()
     {
         if (dao == null)
         {

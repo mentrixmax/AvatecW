@@ -8,6 +8,7 @@ using Menfram.DAL.Reflection;
 /// <summary>
 /// Summary description for Interesse
 /// </summary>
+[Table("interesse")]
 public class Interesse: IEntity
 {
 	public Interesse()

@@ -16,8 +16,8 @@ public class InteresseDAO: AbstractDAO<Interesse>
 		//
 	}
 
-    private InteresseDAO dao = null;
-    public InteresseDAO getInstance()
+    private static InteresseDAO dao = null;
+    public static InteresseDAO getInstance()
     {
         if (dao == null)
         {

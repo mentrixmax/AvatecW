@@ -8,6 +8,7 @@ using Menfram.DAL.Reflection;
 /// <summary>
 /// Summary description for Estado
 /// </summary>
+[Table(TableName="estado")]
 public class Estado : IEntity
 {
     public Estado()

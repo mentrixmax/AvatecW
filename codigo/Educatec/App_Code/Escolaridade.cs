@@ -8,6 +8,8 @@ using Menfram.DAL.Reflection;
 /// <summary>
 /// Summary description for Escolaridade
 /// </summary>
+
+[Table(TableName="escolaridade")]
 public class Escolaridade: IEntity
 {
 	public Escolaridade()
