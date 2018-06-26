@@ -7,7 +7,7 @@
         <br />
         <asp:Label ID="Label1" runat="server" Text="Escolaridade"></asp:Label>
         <br/>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TxtEscolaridade" runat="server"></asp:TextBox>
     &nbsp;
         <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
             Text="Pesquisar" />

@@ -15,11 +15,9 @@ public partial class Config_EscolaridadeHome : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        
-        
-
+      
         EscolaridadeDAO dao = EscolaridadeDAO.getInstance();
-        GridView1.DataSource = dao.findAll();
+        GridView1.DataSource = dao.findByParameters(new Escolaridade() { DesEscolaridade="%"+TxtEscolaridade.Text+"%"});
         GridView1.DataBind();
 
     }
