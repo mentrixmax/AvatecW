@@ -4,5 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<div style="height:600px"></div>
+<div style="height:600px">
+    <asp:Button ID="Button1" runat="server" Text="Button" />
+    </div>
 </asp:Content>

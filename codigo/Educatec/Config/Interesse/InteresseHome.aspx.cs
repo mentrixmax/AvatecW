@@ -11,4 +11,10 @@ public partial class Config_Interesse_InteresseHome : System.Web.UI.Page
     {
 
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        /*testc*/
+        InteresseDAO.getInstance().findAll();
+    }
 }
