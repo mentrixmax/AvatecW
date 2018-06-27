@@ -5,6 +5,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <div style="height:600px">
-    <asp:Button ID="Button1" runat="server" Text="Button" />
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+
+
     </div>
 </asp:Content>

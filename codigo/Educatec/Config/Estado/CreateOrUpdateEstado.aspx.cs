@@ -11,4 +11,9 @@ public partial class Config_Estado_CreateOrUpdateEstadoaspx : System.Web.UI.Page
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+    }
 }
