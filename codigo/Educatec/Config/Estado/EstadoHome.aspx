@@ -16,7 +16,7 @@
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
         <Columns>
             <asp:CommandField ShowSelectButton="True" />
-            <asp:BoundField DataField="Senquecial" HeaderText="Sequencial" />
+            <asp:BoundField DataField="Sequencial" HeaderText="Sequencial" />
             <asp:BoundField DataField="DesEstado" HeaderText="Estado">
             <ItemStyle Width="300px" />
             </asp:BoundField>
@@ -26,7 +26,7 @@
     <p>
         <asp:Button ID="btnIncluir" runat="server" 
             Text="Incluir" 
-            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" OnClick="Button2_Click" />
+            PostBackUrl="~/Config/Estado/CreateOrUpdateEstado.aspx" OnClick="Button2_Click" />
         <asp:Button ID="btnAlterar" runat="server" onclick="Button1_Click" 
             Text="Alterar" />
         <asp:Button ID="btnExcluir" runat="server" onclick="Button1_Click" 

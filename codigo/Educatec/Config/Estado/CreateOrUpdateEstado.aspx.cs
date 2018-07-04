@@ -12,7 +12,14 @@ public partial class Config_Estado_CreateOrUpdateEstadoaspx : System.Web.UI.Page
          
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
+   
+
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void Salvar_Click(object sender, EventArgs e)
     {
         try
         {
@@ -28,16 +35,6 @@ public partial class Config_Estado_CreateOrUpdateEstadoaspx : System.Web.UI.Page
 
             Server.Transfer("~/Config/Erro.aspx");
         }
-
-    }
-
-    protected void LinkButton1_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    protected void Salvar_Click(object sender, EventArgs e)
-    {
 
     }
 
