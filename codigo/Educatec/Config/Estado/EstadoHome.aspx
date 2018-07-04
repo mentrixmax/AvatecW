@@ -11,8 +11,9 @@
     <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
         Text="Pesquisar" />
     <br />
+        <asp:HiddenField ID="Sequencial" runat="server" />
        </p>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
         <Columns>
             <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="Senquecial" HeaderText="Sequencial" />
@@ -23,12 +24,12 @@
     </asp:GridView>
 </div>
     <p>
-        <asp:Button ID="Button2" runat="server" 
+        <asp:Button ID="btnIncluir" runat="server" 
             Text="Incluir" 
             PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" OnClick="Button2_Click" />
-        <asp:Button ID="Button3" runat="server" onclick="Button1_Click" 
+        <asp:Button ID="btnAlterar" runat="server" onclick="Button1_Click" 
             Text="Alterar" />
-        <asp:Button ID="Button4" runat="server" onclick="Button1_Click" 
+        <asp:Button ID="btnExcluir" runat="server" onclick="Button1_Click" 
             Text="Excluir" />
     </p>
 </asp:Content>

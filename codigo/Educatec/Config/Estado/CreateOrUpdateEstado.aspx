@@ -17,7 +17,7 @@
     <asp:Button ID="btnSalvar" runat="server" OnClick="Salvar_Click" Text="Salvar" Height="31px" style="margin-left: 10px" Width="63px" />
 
         
-    <asp:Button ID="Button2" runat="server" Height="31px" Text="Incluir" Width="63px" />
+    <asp:Button ID="btnIncluir" runat="server" Height="31px" Text="Incluir" Width="63px" />
 
         
     </div>

@@ -22,4 +22,14 @@ public partial class Config_Estado_EstadoHome : System.Web.UI.Page
     {
 
     }
+
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        e.Row.Cells[1].Visible = false;
+    }
 }

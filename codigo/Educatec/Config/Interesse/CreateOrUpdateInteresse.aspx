@@ -11,7 +11,7 @@
         <asp:TextBox ID="txtInteresse" runat="server" ></asp:TextBox>
     </p>
     <p>
-        <asp:HiddenField ID="Sequencial" runat="server" />
+        <asp:HiddenField ID="Sequencial" runat="server" OnValueChanged="Sequencial_ValueChanged" />
     </p>
 </div>
 <div>

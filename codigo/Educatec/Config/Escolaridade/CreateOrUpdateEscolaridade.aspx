@@ -12,12 +12,12 @@
         <asp:TextBox ID="txtEscolaridade" runat="server" OnTextChanged="txtEscolaridade_TextChanged" Width="323px"></asp:TextBox>
     </p>
     <p>
+        <asp:HiddenField ID="Sequencial" runat="server" OnValueChanged="Sequencial_ValueChanged" />
     </p>
 </div>
 <div>
     <asp:Button ID="btnSalvar" runat="server" onclick="btnSalvar_Click" 
         Text="Salvar" />
-    <asp:Button ID="Button2" runat="server"  Text="Incluir" />
 </div>
 </asp:Content>
 
