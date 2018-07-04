@@ -63,4 +63,9 @@ public partial class Config_Interesse_CreateOrUpdateInteresse : System.Web.UI.Pa
     {
 
     }
+
+    protected void Sequencial_ValueChanged(object sender, EventArgs e)
+    {
+
+    }
 }

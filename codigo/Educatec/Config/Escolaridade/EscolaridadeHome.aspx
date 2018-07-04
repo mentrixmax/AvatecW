@@ -9,12 +9,13 @@
         <br/>
         <asp:TextBox ID="TxtEscolaridade" runat="server"></asp:TextBox>
     &nbsp;
-        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+        <asp:Button ID="Button1" runat="server" onclick="btnPesquisar_Click" 
             Text="Pesquisar" />
     </p>
     
    <div class="conteudo">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+        <asp:HiddenField ID="Sequencial" runat="server" OnValueChanged="HiddenField1_ValueChanged" />
+        <asp:GridView ID="dgEscolaridade" runat="server" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="Sequencial" HeaderText="Sequencial" />
@@ -27,12 +28,12 @@
 
     
     <p>
-        <asp:Button ID="Button2" runat="server" 
+        <asp:Button ID="bntIncluir" runat="server" 
             Text="Incluir" 
-            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" OnClick="Button2_Click" />
-        <asp:Button ID="Button3" runat="server" onclick="Button1_Click" 
+            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" OnClick="btnIncluir_Click" />
+        <asp:Button ID="bntAlterar" runat="server" onclick="btnAlterar_Click" 
             Text="Alterar" />
-        <asp:Button ID="Button4" runat="server" onclick="Button1_Click" 
+        <asp:Button ID="bntExcluir" runat="server" onclick="btnExcluir_Click" 
             Text="Excluir" />
     </p>
 
