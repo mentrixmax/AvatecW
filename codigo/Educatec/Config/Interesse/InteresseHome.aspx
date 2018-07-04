@@ -28,7 +28,7 @@
       <p>
         <asp:Button ID="Button1" runat="server" 
             Text="Incluir" 
-            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" />
+            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" OnClick="Button1_Click" />
         <asp:Button ID="Button3" runat="server"  
             Text="Alterar" />
         <asp:Button ID="Button4" runat="server"  

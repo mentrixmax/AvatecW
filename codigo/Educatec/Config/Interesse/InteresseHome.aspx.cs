@@ -26,4 +26,9 @@ public partial class Config_Interesse_InteresseHome : System.Web.UI.Page
         }
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+
+    }
 }

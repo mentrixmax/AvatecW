@@ -14,10 +14,20 @@ public partial class Config_Estado_CreateOrUpdateEstadoaspx : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Estado esc = new Estado();
-        esc.DesEstado = txtEstado.Text;
-        EstadoDAO.getInstance().create(esc);
+        try
+        {
+            Estado esc = new Estado();
+            esc.DesEstado = txtEstado.Text;
+            if (EstadoDAO.getInstance().create(esc))
+            {
+                Response.Redirect("~/Config/Sucesso.aspx");
+            }
+        }
+        catch (Exception)
+        {
 
+            Server.Transfer("~/Config/Erro.aspx");
+        }
 
     }
 
@@ -31,9 +41,6 @@ public partial class Config_Estado_CreateOrUpdateEstadoaspx : System.Web.UI.Page
 
     }
 
-    protected void TextBox1_TextChanged1(object sender, EventArgs e)
-    {
-
-    }
+   
 }
 

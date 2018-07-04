@@ -14,9 +14,20 @@ public partial class Config_CreateOrUpdateEscolaridade : System.Web.UI.Page
    
     protected void btnSalvar_Click(object sender, EventArgs e)
     {
-        Escolaridade esc = new Escolaridade();
-        esc.DesEscolaridade = txtEscolaridade.Text;
-        EscolaridadeDAO.getInstance().create(esc);
+        try
+        {
+            Escolaridade esc = new Escolaridade();
+            esc.DesEscolaridade = txtEscolaridade.Text;
+            if (EscolaridadeDAO.getInstance().create(esc))
+            {
+                Response.Redirect("~/Config/Sucesso.aspx");
+            }
+        }
+        catch (Exception)
+        {
+
+            Server.Transfer("~/Config/Erro.aspx");
+        }
 
     }
 
@@ -24,4 +35,6 @@ public partial class Config_CreateOrUpdateEscolaridade : System.Web.UI.Page
     {
 
     }
+
+  
 }
