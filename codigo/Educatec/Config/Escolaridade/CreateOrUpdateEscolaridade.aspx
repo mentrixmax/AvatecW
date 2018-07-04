@@ -7,8 +7,9 @@
 <div style="height:452px">
     <p>
         <asp:Label ID="Label1" runat="server" Text="Escolaridade"></asp:Label>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEscolaridade" ErrorMessage="Campo Obrigatório">*</asp:RequiredFieldValidator>
         <br />
-        <asp:TextBox ID="txtEscolaridade" runat="server" OnTextChanged="txtEscolaridade_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtEscolaridade" runat="server" OnTextChanged="txtEscolaridade_TextChanged" Width="323px"></asp:TextBox>
     </p>
     <p>
     </p>

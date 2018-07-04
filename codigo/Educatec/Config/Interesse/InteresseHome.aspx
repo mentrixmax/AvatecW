@@ -3,15 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div style="height:600px" >
+    <div class="conteudo" >
+        <p>
         <asp:Label ID="Label1" runat="server" Text="Interesse"></asp:Label>
         <br />
 
         <asp:TextBox ID="txtInteresse" runat="server"></asp:TextBox>
-         <br />
-
+               
         <asp:Button ID="Button2" runat="server" Text="Pesquisar" OnClick="Button2_Click" />
-         
+        <br /> 
+            </p>
         <asp:GridView ID="dgInteresse" runat="server" AutoGenerateColumns="False">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
@@ -23,5 +24,16 @@
         </asp:GridView>
          
     </div>
+
+      <p>
+        <asp:Button ID="Button1" runat="server" 
+            Text="Incluir" 
+            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" />
+        <asp:Button ID="Button3" runat="server"  
+            Text="Alterar" />
+        <asp:Button ID="Button4" runat="server"  
+            Text="Excluir" />
+    </p>
+
 </asp:Content>
 
