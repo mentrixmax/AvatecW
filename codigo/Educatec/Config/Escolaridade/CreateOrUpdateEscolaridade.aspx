@@ -17,6 +17,7 @@
 <div>
     <asp:Button ID="btnSalvar" runat="server" onclick="btnSalvar_Click" 
         Text="Salvar" />
+    <asp:Button ID="Button2" runat="server"  Text="Incluir" />
 </div>
 </asp:Content>
 

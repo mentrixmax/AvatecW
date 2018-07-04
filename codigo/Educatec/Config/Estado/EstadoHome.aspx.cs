@@ -17,4 +17,9 @@ public partial class Config_Estado_EstadoHome : System.Web.UI.Page
         GridView1.DataSource = dao.findAll();
         GridView1.DataBind();
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
 }

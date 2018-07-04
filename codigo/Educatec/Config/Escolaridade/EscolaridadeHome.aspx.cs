@@ -21,4 +21,9 @@ public partial class Config_EscolaridadeHome : System.Web.UI.Page
         GridView1.DataBind();
 
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+
+    }
 }

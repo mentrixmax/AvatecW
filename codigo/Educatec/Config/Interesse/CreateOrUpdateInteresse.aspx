@@ -6,6 +6,7 @@
     <div style="height:452px">
     <p>
         <asp:Label ID="Label1" runat="server" Text="Interesse"></asp:Label>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtInteresse" ErrorMessage="Campo Obrigatório">*</asp:RequiredFieldValidator>
         <br />
         <asp:TextBox ID="txtInteresse" runat="server" ></asp:TextBox>
     </p>
@@ -15,6 +16,7 @@
 <div>
     <asp:Button ID="btnSalvar" runat="server" onclick="btnSalvar_Click" 
         Text="Salvar" />
+    <asp:Button ID="Button2" runat="server" Text="Incluir" />
 </div>
 </asp:Content>
 
