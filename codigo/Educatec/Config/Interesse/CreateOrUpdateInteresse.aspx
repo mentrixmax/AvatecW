@@ -11,12 +11,12 @@
         <asp:TextBox ID="txtInteresse" runat="server" ></asp:TextBox>
     </p>
     <p>
+        <asp:HiddenField ID="Sequencial" runat="server" />
     </p>
 </div>
 <div>
     <asp:Button ID="btnSalvar" runat="server" onclick="btnSalvar_Click" 
         Text="Salvar" />
-    <asp:Button ID="Button2" runat="server" Text="Incluir" />
 </div>
 </asp:Content>
 

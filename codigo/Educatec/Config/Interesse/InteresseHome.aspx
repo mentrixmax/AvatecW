@@ -13,10 +13,13 @@
         <asp:Button ID="Button2" runat="server" Text="Pesquisar" OnClick="Button2_Click" />
         <br /> 
             </p>
-        <asp:GridView ID="dgInteresse" runat="server" AutoGenerateColumns="False">
+        <asp:HiddenField ID="Sequencial" runat="server" />
+        <asp:GridView ID="dgInteresse" runat="server" AutoGenerateColumns="False" OnSelectedIndexChanged="dgInteresse_SelectedIndexChanged" OnDataBound="dgInteresse_DataBound" OnRowDataBound="dgInteresse_RowDataBound">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="Sequencial" HeaderText="Sequencial" />
+                <asp:BoundField DataField="Sequencial" HeaderText="Sequencial" ReadOnly="true"  />
+                
+                  
                 <asp:BoundField DataField="DesInteresse" HeaderText="Interesse">
                 <ItemStyle Width="300px" />
                 </asp:BoundField>
@@ -28,11 +31,11 @@
       <p>
         <asp:Button ID="Button1" runat="server" 
             Text="Incluir" 
-            PostBackUrl="~/Config/Escolaridade/CreateOrUpdateEscolaridade.aspx" OnClick="Button1_Click" />
-        <asp:Button ID="Button3" runat="server"  
-            Text="Alterar" />
-        <asp:Button ID="Button4" runat="server"  
-            Text="Excluir" />
+            PostBackUrl="~/Config/Interesse/CreateOrUpdateInteresse.aspx" />
+        <asp:Button ID="btnAlterar" runat="server"  
+            Text="Alterar" Enabled="False" OnClick="btnAlterar_Click" />
+        <asp:Button ID="btnExcluir" runat="server"  
+            Text="Excluir" Enabled="False" />
     </p>
 
 </asp:Content>
