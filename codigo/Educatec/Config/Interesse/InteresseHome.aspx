@@ -7,12 +7,12 @@
         <asp:Label ID="Label1" runat="server" Text="Interesse"></asp:Label>
         <br />
 
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtInteresse" runat="server"></asp:TextBox>
          <br />
 
         <asp:Button ID="Button2" runat="server" Text="Pesquisar" OnClick="Button2_Click" />
          
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+        <asp:GridView ID="dgInteresse" runat="server" AutoGenerateColumns="False">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="Sequencial" HeaderText="Sequencial" />

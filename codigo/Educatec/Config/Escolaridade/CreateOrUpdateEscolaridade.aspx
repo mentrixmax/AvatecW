@@ -8,7 +8,7 @@
     <p>
         <asp:Label ID="Label1" runat="server" Text="Escolaridade"></asp:Label>
         <br />
-        <asp:TextBox ID="txtEscolaridade" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtEscolaridade" runat="server" OnTextChanged="txtEscolaridade_TextChanged"></asp:TextBox>
     </p>
     <p>
     </p>

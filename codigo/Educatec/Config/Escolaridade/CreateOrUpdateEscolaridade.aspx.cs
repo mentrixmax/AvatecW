@@ -19,4 +19,9 @@ public partial class Config_CreateOrUpdateEscolaridade : System.Web.UI.Page
         EscolaridadeDAO.getInstance().create(esc);
 
     }
+
+    protected void txtEscolaridade_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }
