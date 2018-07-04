@@ -13,13 +13,17 @@ public partial class Config_Interesse_InteresseHome : System.Web.UI.Page
     }
 
     protected void Button2_Click(object sender, EventArgs e)
-    {
-        /*testc*/
-        
+    {   
+        try
+        {
 
-        dgInteresse.DataSource= InteresseDAO.getInstance().findByParameters(
-            new Interesse() { DesInteresse="%"+txtInteresse.Text+"%"});
-        dgInteresse.DataBind();
+            dgInteresse.DataSource = InteresseDAO.getInstance().findByParameters(
+                new Interesse() { DesInteresse = "%" + txtInteresse.Text + "%" });
+            dgInteresse.DataBind();
+        }
+        catch (Exception) {
+            Server.Transfer("~/Config/Erro.aspx");
+        }
 
     }
 }

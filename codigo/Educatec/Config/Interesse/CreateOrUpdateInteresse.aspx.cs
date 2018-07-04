@@ -14,9 +14,19 @@ public partial class Config_Interesse_CreateOrUpdateInteresse : System.Web.UI.Pa
 
     protected void btnSalvar_Click(object sender, EventArgs e)
     {
-        Interesse esc = new Interesse();
-        esc.DesInteresse= txtInteresse.Text;
-        InteresseDAO.getInstance().create(esc);
+
+        try
+        {
+            Interesse esc = new Interesse();
+            esc.DesInteresse = txtInteresse.Text;
+            if (InteresseDAO.getInstance().create(esc)) {
+                Response.Redirect("~/Config/Sucesso.aspx");
+            }
+        }
+        catch (Exception) {
+            
+            Server.Transfer("~/Config/Erro.aspx");
+        }
 
     }
     protected void txtInterresse_TextChanged(object sender, EventArgs e)
