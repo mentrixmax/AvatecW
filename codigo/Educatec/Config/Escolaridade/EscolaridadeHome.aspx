@@ -25,6 +25,7 @@
         </asp:GridView>
     </div>
 
+    
     <p>
         <asp:Button ID="Button2" runat="server" 
             Text="Incluir" 
@@ -35,5 +36,6 @@
             Text="Excluir" />
     </p>
 
+    
 </asp:Content>
 

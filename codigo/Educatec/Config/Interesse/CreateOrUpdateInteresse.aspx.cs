@@ -23,6 +23,12 @@ public partial class Config_Interesse_CreateOrUpdateInteresse : System.Web.UI.Pa
         }
     }
 
+    private void sucess() {
+        ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "changeDIV()", true);
+        txtInteresse.Text =
+            "";
+        Sequencial.Value = "";
+    }
     protected void btnSalvar_Click(object sender, EventArgs e)
     {
 
@@ -36,14 +42,14 @@ public partial class Config_Interesse_CreateOrUpdateInteresse : System.Web.UI.Pa
 
                 if (InteresseDAO.getInstance().update(esc))
                 {
-                    Response.Redirect("~/Config/Sucesso.aspx");
+                    sucess();
                 }
             }
             else
             {
                 if (InteresseDAO.getInstance().create(esc))
                 {
-                    Response.Redirect("~/Config/Sucesso.aspx");
+                    sucess();
                 }
             }
         }

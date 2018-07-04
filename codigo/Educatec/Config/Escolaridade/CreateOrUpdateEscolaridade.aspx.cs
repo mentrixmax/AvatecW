@@ -20,7 +20,11 @@ public partial class Config_CreateOrUpdateEscolaridade : System.Web.UI.Page
             esc.DesEscolaridade = txtEscolaridade.Text;
             if (EscolaridadeDAO.getInstance().create(esc))
             {
-                Response.Redirect("~/Config/Sucesso.aspx");
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "changeDIV()", true);
+                txtEscolaridade.Text =
+                    "";
+                
+                
             }
         }
         catch (Exception)

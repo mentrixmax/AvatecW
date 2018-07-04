@@ -7,10 +7,24 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <script language="javascript" type="text/javascript">
+        function changeDIV() {
+            document.getElementById('novo').classList.remove('hiddenDiv');
+            document.getElementById('novo').classList.add('alertsucess');
+            setInterval(mens, 2000);
 
-    <link rel="stylesheet" type="text/css" href="Config/StyleSheet.css">
+        }
+        function mens() {
+            location.href = "InteresseHome.aspx";
+        }
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="/Config/StyleSheet.css" />
 
     <style type="text/css">
+        .closebtn:hover {
+            color: black;
+        }
         /* Dropdown Button */
         .dropbtn {
             background-color: #4CAF50;
@@ -18,7 +32,7 @@
             padding: 8px;
             font-size: 12px;
             border: none;
-            height:25px;
+            height: 25px;
         }
 
         /* The container <div> - needed to position the dropdown content */
@@ -61,6 +75,7 @@
             background-color: #3e8e41;
         }
     </style>
+
 </head>
 
 <body>
@@ -72,13 +87,13 @@
             <a href="/Config/Escolaridade/EscolaridadeHome.aspx">Escolaridade</a>
         </div>
     </div>
-  
+
 
     <form id="form1" runat="server">
         <div>
-            
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>
