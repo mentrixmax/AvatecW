@@ -8,12 +8,12 @@
     <asp:Label ID="Label1" runat="server" Text="Estado"></asp:Label>
     <br />
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+    <asp:Button ID="btnPesquisar" runat="server" onclick="Button1_Click" 
         Text="Pesquisar" />
     <br />
         <asp:HiddenField ID="Sequencial" runat="server" />
        </p>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+    <asp:GridView ID="dgEstado" runat="server" AutoGenerateColumns="False" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
         <Columns>
             <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="Sequencial" HeaderText="Sequencial" />

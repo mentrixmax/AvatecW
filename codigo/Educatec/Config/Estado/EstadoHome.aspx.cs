@@ -14,8 +14,8 @@ public partial class Config_Estado_EstadoHome : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         EstadoDAO dao = EstadoDAO.getInstance();
-        GridView1.DataSource = dao.findAll();
-        GridView1.DataBind();
+        dgEstado.DataSource = dao.findAll();
+        dgEstado.DataBind();
     }
 
     protected void Button2_Click(object sender, EventArgs e)
@@ -25,7 +25,14 @@ public partial class Config_Estado_EstadoHome : System.Web.UI.Page
 
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
+        if (dgEstado.SelectedRow != null)
+        {
+            GridView dg = (GridView)sender;
 
+            Sequencial.Value = dgEstado.SelectedRow.Cells[1].Text;
+            btnAlterar.Enabled = true;
+            btnExcluir.Enabled = true;
+        }
     }
 
     protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
