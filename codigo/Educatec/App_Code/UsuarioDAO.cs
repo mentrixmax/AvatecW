@@ -32,4 +32,6 @@ public class UsuarioDAO : AbstractDAO<Usuario>
     {
         return typeof(Usuario);
     }
+
+    /// teste de commit
 }
