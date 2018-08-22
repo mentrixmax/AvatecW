@@ -34,4 +34,38 @@ public class Usuario : IEntity
         get;
         set;
     }
+
+    public String Nome { get; set; }
+
+    public String Rua { get; set; }
+
+    public String Bairro { get; set; }
+
+    public String Cidade { get; set; }
+
+
+    public int? IdEstado
+    {
+        get;
+        set;
+    }
+
+    public int? IdEscolaridade
+    {
+        get;
+        set;
+    }
+
+    public int? IdInstituicaoOrigem
+    {
+        get;
+        set;
+    }
+
+    public String Email { get; set; }
+
+    public String Telefone { get; set; }
+
+    public String Senha { get; set; }
 }
+
